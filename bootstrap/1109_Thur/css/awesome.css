@@ -1,0 +1,25 @@
+body {
+    background: url(../img/city.jpg) no-repeat center fixed ;
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: 'Vollkorn SC', serif;
+}
+
+.rowHeight {
+    height: 300px;
+}
+.awep {
+    color: #fff;
+}
+
+.imgp {
+    width: 300px;
+    height : 100px;
+}
+
+.footer {
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+}
+
