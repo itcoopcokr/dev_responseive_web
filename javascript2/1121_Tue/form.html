@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./css/form.css">
+    <script type="text/javascript" src="./js/ready.js"></script>
+
+</head>
+<body onload="ready()">
+<div>
+    <form method="POST" action="server_send.py" name="frm" onsubmit="return check()">
+        <div class="div_height">
+            가입신청서에 *란은 필수입니다
+        </div>
+
+        <div class="div_height">
+            <input type="text" name="name" id="name" size="20" placeholder="이름" value="">*
+            <p id="name_error" class="p_error"></p>
+        </div>
+        <div class="div_height">
+            <input type="text" name="email" id="email" placeholder="이메일">
+        </div>
+        <div class="div_height">
+            <input type="text" name="id" id="id" placeholder="아이디" value="">*
+        </div>
+        <div class="div_height">
+            <input type="password" name="password" id="password" placeholder="비밀번호" value="">*
+        </div>
+        <div class="div_height">
+            <input type="password" name="password2" id="password2" placeholder="비밀번호 확인"value="">*
+        </div>
+        <div class="div_height">
+            <select name="job">
+                <option value=""  > -- 직업 -- </option>
+                <option value="worker" selected >회사원</option>
+                <option value="officer" >공무원</option>
+                <option value="student" >학생</option>
+                <option value="solider">군인</option>
+            </select>
+
+        </div>
+        <div class="div_height">
+            <input type="radio" name="gender" value="man" > 남
+            <input type="radio" name="gender" value="woman" checked >여자
+            <input type="radio" name="gender" value="child">어린이
+        </div>
+        <div class="div_height">
+            <input type="checkbox" name="hobby" value="reading">독서
+            <input type="checkbox" name="hobby" value="hiking" checked>등산
+            <input type="checkbox" name="hobby" value="fishing">낚시
+        </div>
+        <div class="div_height">
+            <textarea name="content" rows="5" cols="30"></textarea>
+        </div>
+
+
+        <div class="div_height">
+            <input type="submit" value="회원가입">
+            <input type="reset" value="다시쓰기">
+        </div>
+
+    </form>
+</div>
+
+<script type="text/javascript" src="./js/form.js"></script>
+
+</body>
+</html>
