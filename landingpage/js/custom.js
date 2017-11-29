@@ -55,3 +55,29 @@ $(function() {
 
 });
 
+/*==========================================
+        counterup
+https://github.com/ciromattia/jquery.counterup
+===========================================*/
+$(function() {
+    $('.counter').counterUp({
+        delay : 10,
+        time: 2000
+    });
+});
+/*==========================================
+        clients
+===========================================*/
+$(function() {
+    // Handler for .ready() called.
+    $("#clients-list").owlCarousel({
+        items : 4,
+        autoplay:true,
+        smartSpeed: 500,
+        loop: true,
+        autoplayHoverPause:true
+    });
+
+});
+
+
