@@ -29,8 +29,24 @@ http://owlcarousel2.github.io/OwlCarousel2/index.html
 ===========================================*/
 $(function() {
     // Handler for .ready() called.
-    $(".owl-carousel").owlCarousel({
+    $("#team-members").owlCarousel({
         items : 3,
+        autoplay:true,
+        smartSpeed: 700,
+        loop: true,
+        autoplayHoverPause:true
+    });
+
+});
+
+/*==========================================
+        Testimonials
+http://owlcarousel2.github.io/OwlCarousel2/index.html
+===========================================*/
+$(function() {
+    // Handler for .ready() called.
+    $("#customers-testimonials").owlCarousel({
+        items : 1,
         autoplay:true,
         smartSpeed: 700,
         loop: true,
